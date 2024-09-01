@@ -13,21 +13,13 @@
 :root {
   --bg-color: #081b29;
   --main-color: #00abf0;
-  --text-color: #ffffff;
-  --second-text-color: #efefef;
+  --text-color: #333;
+  --second-text-color: #555;
   --white-color: #fff;
   --cover-color: linear-gradient(45deg, #00abf0, #006e9a);
   --pages-color: linear-gradient(90deg, #fff, #ddd);
   --border: 0.125rem solid #00abf0;
   --box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.2);
-}
-/* General Styles */
-
-p {
-  line-height: 20px;
-}
-.section {
-  margin-bottom: 60px;
 }
 
 @keyframes show-animate {
@@ -95,8 +87,6 @@ p {
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-bottom: 60px;
-  margin-top: 60px;
 }
 
 .profile-page img {
@@ -144,11 +134,11 @@ p {
 
 .profile-page p {
   text-align: justify;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .profile-page .btn-box {
-  margin-top: 40px;
+  margin-top: 1.2rem;
 }
 
 .btn {
@@ -217,14 +207,13 @@ p {
 }
 
 .workeduc-box {
-  margin-left: 20px;
+  border-left: var(--border);
 }
 
 .workeduc-box .workeduc-content {
   position: relative;
   padding-left: 1.6rem;
   margin-bottom: 1.2rem;
-  border-left: var(--border);
 }
 
 .workeduc-box .workeduc-content::before {
@@ -247,7 +236,7 @@ p {
 }
 
 .workeduc-content p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 .number-page {
   position: absolute;
@@ -280,7 +269,7 @@ p {
 
 .subjects {
   margin: 0.5rem 0rem 0rem 2.5rem;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 
@@ -311,14 +300,14 @@ p {
 }
 
 .services-content p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin-bottom: 0.1rem;
 }
 
 .services-content .btn {
   position: absolute;
   bottom: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   width: 7rem;
   height: 2rem;
   margin: 1rem auto 0; /* Center button horizontally and add margin */
@@ -333,6 +322,7 @@ p {
 }
 
 .skills-box .skills-content {
+  flex: 1 1 20rem;
   gap: 1rem;
 }
 
@@ -345,8 +335,6 @@ p {
 .skills-content .content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   gap: 0.2rem;
 }
 
@@ -361,7 +349,7 @@ p {
   justify-content: center;
   align-items: center;
   width: 6rem;
-  height: 6rem;
+  height: 5rem;
   border: var(--border);
   border-radius: 0.3rem;
   font-weight: 600;
@@ -394,9 +382,6 @@ p {
 
 .portfolio-box .info-box {
   margin: 1rem 0 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
 }
 
 .portfolio-box .info-box .info-title {
@@ -424,19 +409,15 @@ p {
   font-weight: 600;
 }
 
-.portfolio-box .info-box p {
-  font-size: 0.9rem;
-}
-
 .portfolio-box .btn-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
 }
 
 .portfolio-box .btn-box .btn {
   display: flex;
+  margin: 0 1.1rem;
 }
 
 .contact-box {
@@ -449,7 +430,7 @@ p {
   background: transparent;
   border-radius: 0.3rem;
   padding: 0.8rem;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: var(--text-color);
   margin-bottom: 1.5rem;
 }
@@ -491,7 +472,7 @@ p {
 
 .contact-box .info-box span a {
   color: var(--text-color);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .back-profile {
@@ -521,7 +502,7 @@ p {
   left: 50%;
   transform: translateX(-50%) scale(0.5);
   color: var(--main-color);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   opacity: 0;
   transition: 0.5s;
 }
