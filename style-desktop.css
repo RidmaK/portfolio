@@ -10,17 +10,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-:root {
-  --bg-color: #081b29;
-  --main-color: #00abf0;
-  --text-color: #333;
-  --second-text-color: #555;
-  --white-color: #fff;
-  --cover-color: linear-gradient(45deg, #00abf0, #006e9a);
-  --pages-color: linear-gradient(90deg, #fff, #ddd);
-  --border: 0.125rem solid #00abf0;
-  --box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.2);
-}
 
 @keyframes show-animate {
   0%,
@@ -206,9 +195,6 @@
   margin-bottom: 1rem;
 }
 
-.workeduc-box {
-  border-left: var(--border);
-}
 
 .workeduc-box .workeduc-content {
   position: relative;
@@ -420,35 +406,35 @@
   margin: 0 1.1rem;
 }
 
-.contact-box {
+.contact-box-desktop {
   text-align: center;
 }
 
-.contact-box .field {
+.contact-box-desktop .field {
   width: 100%;
   border: var(--border);
   background: transparent;
   border-radius: 0.3rem;
   padding: 0.8rem;
   font-size: 0.8rem;
-  color: var(--text-color);
+  color: var(--text-color) !important;
   margin-bottom: 1.5rem;
 }
 
-.contact-box .field::placeholder {
-  color: var(--text-color);
+.contact-box-desktop .field::placeholder {
+  color: var(--text-color) !important;
 }
 
-.contact-box textarea {
+.contact-box-desktop textarea {
   resize: none;
   height: 10rem;
 }
 
-.contact-box .btn {
+.contact-box-desktop .btn {
   cursor: pointer;
 }
 
-.contact-box .info-box {
+.contact-box-desktop .info-box {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -457,7 +443,7 @@
   gap: 0.5rem;
 }
 
-.contact-box .info-box span {
+.contact-box-desktop .info-box span {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -466,11 +452,11 @@
   font-weight: 600;
 }
 
-.contact-box .info-box span i {
+.contact-box-desktop .info-box span i {
   color: var(--main-color);
 }
 
-.contact-box .info-box span a {
+.contact-box-desktop .info-box span a {
   color: var(--text-color);
   font-size: 0.8rem;
 }

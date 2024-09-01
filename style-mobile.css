@@ -10,17 +10,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-:root {
-  --bg-color: #081b29;
-  --main-color: #00abf0;
-  --text-color: #ffffff;
-  --second-text-color: #efefef;
-  --white-color: #fff;
-  --cover-color: linear-gradient(45deg, #00abf0, #006e9a);
-  --pages-color: linear-gradient(90deg, #fff, #ddd);
-  --border: 0.125rem solid #00abf0;
-  --box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.2);
-}
 /* General Styles */
 
 p {
@@ -450,12 +439,12 @@ p {
   border-radius: 0.3rem;
   padding: 0.8rem;
   font-size: 0.9rem;
-  color: var(--text-color);
+  color: var(--white-color);
   margin-bottom: 1.5rem;
 }
 
 .contact-box .field::placeholder {
-  color: var(--text-color);
+  color: var(--white-color);
 }
 
 .contact-box textarea {
@@ -490,7 +479,7 @@ p {
 }
 
 .contact-box .info-box span a {
-  color: var(--text-color);
+  color: var(--white-color);
   font-size: 0.9rem;
 }
 

@@ -13,14 +13,15 @@
 :root {
   --bg-color: #081b29;
   --main-color: #00abf0;
-  --text-color: #ffffff;
-  --second-text-color: #efefef;
+  --text-color: #333;
+  --second-text-color: #555;
   --white-color: #fff;
   --cover-color: linear-gradient(45deg, #00abf0, #006e9a);
   --pages-color: linear-gradient(90deg, #fff, #ddd);
   --border: 0.125rem solid #00abf0;
   --box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.2);
 }
+
 /* General Styles */
 body {
   font-family: "Arial", sans-serif;
@@ -29,9 +30,11 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  overflow: hidden;
 }
+
 .wrapper-mobile {
-  color: var(--text-color);
+  color: var(--white-color);
   margin: 0;
   padding: 0;
   width: 100%;
@@ -39,19 +42,18 @@ body {
   margin: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  overflow: hidden;
   display: none;
 }
 
 .wrapper {
   position: relative;
   width: 66rem;
-  height: 40rem;
+  height: 43rem;
   padding: 2rem;
   perspective: 250rem;
   animation: show-animate 2s forwards;
   transform: scale(0.9);
-  display: block;
+  display: block; /* Added overflow hidden */
 }
 
 @media (max-width: 768px) {
@@ -60,5 +62,8 @@ body {
   }
   .wrapper-mobile {
     display: block;
+  }
+  body {
+    overflow-y: auto;
   }
 }
